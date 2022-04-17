@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import Tippy from '@tippyjs/react';
 import PropTypes from 'prop-types';
-import { ReactComponent as SearchIcon } from '../assets/Search.svg';
 import { ReactComponent as OptionsIcon } from '../assets/Configure.svg';
 
-import {Wrapper, InputWrapper, Input, Span, SvgWrapper, CloseIcon } from './Styles/SearcInput.styled';
+import {Wrapper, InputWrapper, Input, Span, SvgWrapper, CloseIcon, SearchIcon } from './Styles/SearcInput.styled';
 
 function SearchInput({ placeholder }) {
   const [text, setText] = useState('');

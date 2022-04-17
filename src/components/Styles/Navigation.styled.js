@@ -18,6 +18,7 @@ export const NavBody = styled.nav`
     height: 100%;
     width: 9.7rem;
     border-radius: 0px;
+    padding-top: 9.2rem;
   }
 `;
 
@@ -103,6 +104,7 @@ export const NavItem = styled.li`
   width: 4.2rem;
   margin: auto;
   transition: 0.4s ease;
+  cursor: pointer;
 
   ${props => props.active ? css`
     background-color: ${props.theme.primary.bg};
@@ -111,4 +113,5 @@ export const NavItem = styled.li`
   @media (min-width: 1024px) {
     width: 7.2rem;
     height: 7.2rem;
+    margin-bottom: 3rem;
   }`;

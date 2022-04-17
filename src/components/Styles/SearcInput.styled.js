@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
-import { ReactComponent as Close } from '../../assets/Close.svg';
+import { Close } from '../../assets';
+import { Search } from '../../assets';
 
 
 const handeWrapperState = (isActive, variables) => {
@@ -87,4 +88,8 @@ export const SvgWrapper = styled.div`
 
 export const CloseIcon = styled(Close)`
   margin-right: 1rem;
+`
+
+export const SearchIcon = styled(Search)`
+  stroke: ${props => props.theme.gray_scale_off.label}
 `

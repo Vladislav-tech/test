@@ -1,8 +1,7 @@
 import React from 'react';
 import 'tippy.js/dist/tippy.css';
 import { ThemeProvider } from 'styled-components';
-
-import { Navigation } from './components';
+import { DesktopCard } from './components';
 
 const theme = {
   primary: {
@@ -15,6 +14,7 @@ const theme = {
     label: '#6E7191'
   },
   gray_scale_bg: '#F7F7FC',
+  dark_gray: '#C4C4C4',
 
   duration: '0.4s',
   white: '#fff',
@@ -24,7 +24,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Navigation/>
+        <DesktopCard 
+          image="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/800px-Supreme_pizza.jpg"
+          title="Pizza"
+          tags={['Italian', 'Middle','1','2','3','4']}
+          summary="oif29 owijfw0 oafoN NIWGJ92J NOIGP209tim powi029tng2 2p9fmvl;893,"
+          />
       </div>      
     </ThemeProvider>
 

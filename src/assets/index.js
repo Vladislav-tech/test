@@ -4,3 +4,4 @@ export { ReactComponent as Close} from './Close.svg';
 export { ReactComponent as Settings } from './Settings.svg';
 export { ReactComponent as Configure } from './Configure.svg';
 export { ReactComponent as AlignRight } from './Align-right.svg';
+export { ReactComponent as Logo } from './logo.svg';
