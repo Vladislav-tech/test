@@ -1,7 +1,8 @@
 import React from 'react';
 import 'tippy.js/dist/tippy.css';
 import { ThemeProvider } from 'styled-components';
-import { DesktopCard } from './components';
+
+import { CircleProgressBar } from './components';
 
 const theme = {
   primary: {
@@ -24,12 +25,14 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <DesktopCard 
-          image="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/800px-Supreme_pizza.jpg"
-          title="Pizza"
-          tags={['Italian', 'Middle','1','2','3','4']}
-          summary="oif29 owijfw0 oafoN NIWGJ92J NOIGP209tim powi029tng2 2p9fmvl;893,"
-          />
+        <CircleProgressBar
+          strokeWidth={10}
+          sqSize={150}
+          title={'123'}
+          percentage={42}
+          primaryColor="orange"
+          secondaryColor="lavender"
+        />
       </div>      
     </ThemeProvider>
 
